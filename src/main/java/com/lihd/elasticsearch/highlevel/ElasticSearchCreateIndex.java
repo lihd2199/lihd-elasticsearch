@@ -1,7 +1,6 @@
-package com.lihd.elasticsearch;
+package com.lihd.elasticsearch.highlevel;
 
 
-import org.elasticsearch.action.support.ActiveShardCount;
 import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.client.indices.CreateIndexRequest;

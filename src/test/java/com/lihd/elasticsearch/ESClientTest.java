@@ -1,5 +1,6 @@
 package com.lihd.elasticsearch;
 
+import com.lihd.elasticsearch.highlevel.ESClient;
 import org.elasticsearch.client.RestHighLevelClient;
 import org.junit.Test;
 

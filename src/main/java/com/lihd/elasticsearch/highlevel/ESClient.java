@@ -1,4 +1,4 @@
-package com.lihd.elasticsearch;
+package com.lihd.elasticsearch.highlevel;
 
 import org.apache.http.HttpHost;
 import org.apache.http.auth.AuthScope;

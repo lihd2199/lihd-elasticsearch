@@ -1,4 +1,4 @@
-package com.lihd.elasticsearch;
+package com.lihd.elasticsearch.highlevel;
 
 import org.elasticsearch.action.bulk.BulkRequest;
 import org.elasticsearch.action.bulk.BulkResponse;
@@ -19,9 +19,9 @@ import java.util.Map;
  * @author: li_hd
  * @create: 2020-05-01 20:39
  **/
-class ElasticSearchInsert {
+public class ElasticSearchInsert {
 
-    void insert(RestHighLevelClient client) throws IOException {
+    public void insert(RestHighLevelClient client) throws IOException {
 
 
         IndexRequest indexRequest = new IndexRequest("lihd");

@@ -1,5 +1,6 @@
 package com.lihd.elasticsearch;
 
+import com.lihd.elasticsearch.highlevel.ElasticSearchCreateIndex;
 import org.junit.Test;
 
 /**

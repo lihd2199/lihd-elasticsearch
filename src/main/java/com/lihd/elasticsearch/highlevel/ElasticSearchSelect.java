@@ -1,4 +1,4 @@
-package com.lihd.elasticsearch;
+package com.lihd.elasticsearch.highlevel;
 
 import org.elasticsearch.action.search.SearchRequest;
 import org.elasticsearch.action.search.SearchResponse;
@@ -15,7 +15,6 @@ import org.elasticsearch.search.aggregations.AggregationBuilders;
 import org.elasticsearch.search.aggregations.Aggregations;
 import org.elasticsearch.search.aggregations.bucket.terms.ParsedLongTerms;
 import org.elasticsearch.search.aggregations.bucket.terms.TermsAggregationBuilder;
-import org.elasticsearch.search.aggregations.metrics.Sum;
 import org.elasticsearch.search.builder.SearchSourceBuilder;
 import org.elasticsearch.search.searchafter.SearchAfterBuilder;
 
@@ -28,7 +27,7 @@ import java.util.concurrent.TimeUnit;
  * @author: li_hd
  * @create: 2020-05-01 20:48
  **/
-class ElasticSearchSelect {
+public class ElasticSearchSelect {
 
     void termSearch(RestHighLevelClient client) throws IOException {
 
@@ -166,7 +165,7 @@ class ElasticSearchSelect {
     /**
      * 聚合  group by
      */
-    void aggregation(RestHighLevelClient client) {
+    public void aggregation(RestHighLevelClient client) {
 
         SearchRequest request = new SearchRequest("lihd");
 
